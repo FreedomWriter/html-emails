@@ -9,7 +9,18 @@
 	<title>HTML Email Template Boilerplate</title>
    <style type="text/css">
    	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
+      table {
+         border-spacing: 0;
+      }
+      td {
+         padding:0;
+      }
+      p {
+         font-size: 15px;
+      }
+      img {
+         border: 0;
+      }
 		@media screen and (max-width: 599.98px) {
 
       }
@@ -22,7 +33,12 @@
       @media (prefers-color-scheme: dark) {
 
       }
-	</style>
+   </style>
+   <!--[if (gte mso 9 )|(IE)]>
+      <style type="text/css">
+         table {border-collapse: collapse!important;}
+      </style>
+   <![endif]-->
 </head>
 
 <body style="Margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
@@ -35,7 +51,6 @@
    <center style="width: 100%;table-layout: fixed;background-color:#dde0e1;padding-bottom:40px">
       <div style="max-width: 600px;background-color: #fafdfe;box-shadow: 0 0 10px rgba(0, 0, 0, .2)">
 
-      <h1>Test!</h1>
          
          <!-- Preheader (remove comment) Preheader is not meant to be seen, hence this stylling-->
          <div style="font-size: 0px; color:#fafdfe;line-height: 1px;mso-line-height-rule:exactly;display:none;max-width:0px;max-width: 0;opacity:0;overflow:hidden;mso-hide:all">
@@ -43,6 +58,16 @@
             This is our preheader text, it is not meant to be seen and should be 85-100 characters in length
          </div>
           <!-- End Preheader (remove comment) -->
+         <h1>Test!</h1>
+
+         <!-- Ghost Table-->
+            <!--[if (gte mso 9 )|(IE)]>
+               <table width="600" align="center" style="border-spacing:0";color:#565656;">
+                  <tr>
+                     <td style="padding:0;">
+            <![endif]-->
+         <!-- End Ghost Table is actually at the bottom of the body (inside the div and center tag)-->
+         <table align="center" style="border-spacing:0;color:#565656;font-family: 'Lato', sans-serif, Arial, Helvitica!important;background-color: #fafdfe;Margin:0;padding:0;width:100%;max-width:600px;" role="presentation">
 
       <!-- START SOCIAL ICONS -->
       <!-- END SOCIAL ICONS -->
@@ -70,6 +95,12 @@
 
       <!-- START FOOTER -->
       <!-- END FOOTER -->
+         </table>
+            <!--[if (gte mso 9 )|(IE)]>
+               <td/>
+            </tr>
+         </table>
+            <![endif]-->
       </div>
    </center >
 </body>
