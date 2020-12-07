@@ -13,3 +13,8 @@ If using a email client, remove comments from html, comments can get your email 
 When adding margin, use a capital M (for outlook)
 
 [Outlook Conditional CSS]("https://stackoverflow.design/email/base/mso/")
+
+The center tag is no longer valid in HTML5, but is still valid in email html
+```html
+<center></center>
+```
