@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <meta name="color-scheme" content="light dark">
-   <meta name="supported-color-schemes" content="light dark"> -->
+   <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark">
 	<title>HTML Email Template Boilerplate</title>
    <style type="text/css">
    	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
@@ -20,6 +20,10 @@
       }
       img {
          border: 0;
+      }
+      a {
+         color: #e8fbfa;
+         text-decoration: none;
       }
 		@media screen and (max-width: 599.98px) {
          .two-columns .padding,
@@ -54,10 +58,20 @@
          }
       }
 
+
       /* Custom Dark Mode Colors */
-
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
       @media (prefers-color-scheme: dark) {
-
+         body, center, table {
+            background: #2d2d2d!important;
+            color: #ffffff!important;
+         }
+         .darkmode-transparent {
+            background-color: transparent!important;
+         }
       }
    </style>
 	<!--[if (gte mso 9)|(IE)]>
@@ -97,13 +111,13 @@
          <!-- START SOCIAL ICONS -->
          <tr>
             <td style="padding:0;">
-               <table width="100%" style="border-spacing: 0;" role="presentation">
+               <table width="100%" style="border-spacing: 0;background-color: #eaf6fb;" role="presentation">
 
                   <tr>
                      <td height="3" style="background-color: #21c6b8;"></td>
                   </tr>
                   <tr>
-                     <td  style="background-color: #ebf5fa;text-align: center;padding: 10px 0 8px 0">
+                     <td  style="text-align: center;padding: 10px 0 8px 0">
                      <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/bPLzh61/circle-facebook.png" alt="Facebook" title="Facebook" width="32" border="0"></a>
                      <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/sRH7TK2/circle-twitter.png" alt="Twitter" title="Twitter" width="32" border="0"></a>
                      <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/VQ9nCv3/circle-youtube.png" alt="YouTube" title="YouTube" width="32" border="0"></a>
@@ -123,9 +137,9 @@
          <!-- START LOGO -->
          <tr>
             <td style="padding:0;">
-               <table width="100%" style="border-spacing: 0;" role="presentation">
+               <table width="100%" style="border-spacing: 0;background-color: #eaf6fb;" role="presentation">
                   <tr>
-                     <td style="background-color: #ebf5fa;padding:20px 0;text-align:center;">
+                     <td style="padding:20px 0;text-align:center;">
                         <a href="https://example.com">
                            <img src="https://i.ibb.co/rx31TX7/html-email.png" alt="HTML Email Logo" width="280" border="0">
                         </a>
@@ -224,7 +238,7 @@
                                  </tr>
                                  <tr>
                                     <td style="padding:10px 10px 20px 10px;">
-                                       <p style="font-size:17px;font-weight: bold;">Build Responsive Emails</p>
+                                       <p style="font-size:17px;font-weight: bold;line-height: 25px;">Build Responsive Emails</p>
                                        <p style="font-size: 15px;line-height:20px">
                                           Responsive HTML Email Templates that you can build around to master email development.
                                        </p>
@@ -268,7 +282,7 @@
                                  </tr>
                                  <tr>
                                     <td style="padding:10px 10px 20px 10px;">
-                                       <p style="font-size:17px;font-weight: bold;">Create Custom Designs</p>
+                                       <p style="font-size:17px;font-weight: bold;line-height: 25px;">Create Custom Designs</p>
                                        <p style="font-size: 15px;line-height:20px">
                                           Responsive HTML Email Templates that you can build around to master email development.
                                        </p>
@@ -324,7 +338,7 @@
                            <tr>
                               <td class="padding first" style="padding: 15px 20px 15px 20px;background-color: #1e5d7b;">
 
-                                 <table class="content" style="border-spacing: 0;text-align: center;" role="presentation">
+                                 <table class="content darkmode-transparent" style="border-spacing: 0;text-align: center;" role="presentation">
                                     <tr>
                                        <td>
                                           <a href="https://example.com" target="_blank"><img class="one-third-col-img" src="https://i.ibb.co/j852yw3/teal-circle.png" alt="" width="160" style="max-width: 160px;" border="0"></a>
